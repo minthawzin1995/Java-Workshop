@@ -1,17 +1,25 @@
 public class Student {
   //variable declartions
 
-  private final int id;
+  private int id;
   private String name;
-  private static int currentId = 1000;
+  public static int currentId = 1000;
+  private char[] grades;
+  private static int studentCount;
   String gender;
 
   //Constructor for student class
-  public Student(String name, String gender){
-    this.id = currentId;
+  public Student(String name, String gender, char[] grades){
     this.name = name;
     this.gender = gender;
-    currentId++;
+    this.grades = grades;
+    currentId = currentId + 1;
+    this.id = currentId;
+    studentCount ++;
+  }
+
+  public static int getStudentCount(){
+    return studentCount;
   }
 
   //method declarations

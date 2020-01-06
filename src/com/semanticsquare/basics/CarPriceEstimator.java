@@ -35,7 +35,7 @@ public class CarPriceEstimator {
 		//              then reduce price by $1000
 
 
-		if(!(airBagsCount >= 2 && hasAbs && hasEbd)){
+		if(!(airBagsCount >= 2 && hasAbs && hasEbd){
 			salePrice -= 1000;
 		}
 
