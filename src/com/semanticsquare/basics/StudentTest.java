@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class StudentTest{
   public static void main(String[] args){
 
@@ -5,6 +7,7 @@ public class StudentTest{
     char[] grades_1 = {'A','A','A','B'};
     char[] grades_2 = {'A','A','B','B'};
     char[] grades_3 = {'B','A','B','B'};
+
 
 
     Student test_student = new Student("Joan", "male", grades_1);
@@ -37,5 +40,10 @@ public class StudentTest{
 
     System.out.println("average grades: " + test_student.getAverageGrades());
     System.out.println("average grades: " + test_student3.getAverageGrades());
+
+    int[] studentId = new int[]{1000,1001,1002};
+    char[][] grades = new char[][]{{'A','A','A','B'},{'A','A','B','B'},{'A','A','B','C'}};
+    System.out.println(Arrays.toString(StudentUtil.calculateGPA(studentId, grades)));
+    System.out.println(Arrays.toString(StudentUtil.getStudentsByGPA(3.2,3.5,studentId,grades)));
   }
 }
