@@ -18,6 +18,28 @@ public class Student {
     studentCount ++;
   }
 
+  public char[] getGrades(){
+    return this.grades;
+  }
+
+  public double getAverageGrades() {
+    double totalValue = 0.0;
+    for(char c: this.grades){
+      if(c == 'A'){
+        totalValue += 4;
+      }
+      else if(c == 'B'){
+        totalValue += 3;
+      }
+      else{
+        totalValue += 2;
+      }
+    }
+    double avgGrade = totalValue/this.grades.length;
+
+    return avgGrade;
+  }
+
   public static int getStudentCount(){
     return studentCount;
   }
