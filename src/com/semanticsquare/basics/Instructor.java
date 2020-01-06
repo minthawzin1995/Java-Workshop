@@ -38,7 +38,7 @@ public class Instructor {
 	public Book updateBook(int index, Book book) {
 		Book old_book = new Book(books[index].getTitle());
     this.books[index] = book;
-    return book;
+    return old_book;
 	}
 
 	public static void main(String[] args) {
