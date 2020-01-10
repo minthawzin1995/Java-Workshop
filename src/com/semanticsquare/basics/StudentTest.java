@@ -45,5 +45,10 @@ public class StudentTest{
     char[][] grades = new char[][]{{'A','A','A','B'},{'A','A','B','B'},{'A','A','B','C'}};
     System.out.println(Arrays.toString(StudentUtil.calculateGPA(studentId, grades)));
     System.out.println(Arrays.toString(StudentUtil.getStudentsByGPA(3.2,3.5,studentId,grades)));
+
+    /*
+    String s = "hello this is the world";
+    System.out.println(s.startsWith("hello this is"));
+    */
   }
 }
